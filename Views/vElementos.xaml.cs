@@ -2,9 +2,10 @@ namespace aburbanoS2A.Views;
 
 public partial class vElementos : ContentPage
 {
-	public vElementos()
+	public vElementos(string usuario)
 	{
 		InitializeComponent();
+		lblMensaje.Text = "¡Bienvenido, " + usuario + "!";
 	}
 
     private void Paises_Clicked(object sender, EventArgs e)

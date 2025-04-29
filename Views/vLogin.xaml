@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aburbanoS2A.Views.vLogin"
+             Title="vLogin">
+    <VerticalStackLayout
+        Padding="85"
+        Spacing="45">
+        <Label 
+            Text="Inicio de Sesión"  
+                FontSize="30"
+                TextColor="#2E5266"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--columnas-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+             
+            <Label Text="Usuario: "
+               TextColor="#6E8898"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Usuario"
+                   Grid.Row="0"
+                    Grid.Column="1"
+                   />
+            <Label Text="Contraseña:"
+             TextColor="#6E8898"
+               Grid.Row="1"
+            Grid.Column="0"/>
+            <Entry x:Name="txtContraseña"
+                Placeholder="Contraseña"
+                   IsPassword="True"
+                 Grid.Row="1"
+                Grid.Column="1"/>
+
+        </Grid>
+
+        <Button x:Name="btnIngreso" Text="Iniciar Sesión"
+                BackgroundColor="#E2C044"
+                Clicked="btnIngreso_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

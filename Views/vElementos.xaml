@@ -6,6 +6,11 @@
     <VerticalStackLayout
         Padding="20"
         Spacing="20">
+        
+        <Label x:Name="lblMensaje"
+               TextColor="#ED6A5A"
+               FontSize="20"/>
+
         <Label 
             Text="Semana 2 - Elementos GUI"
             FontSize="20"

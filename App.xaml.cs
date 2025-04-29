@@ -1,4 +1,6 @@
-﻿namespace aburbanoS2A
+﻿using aburbanoS2A.Views;
+
+namespace aburbanoS2A
 {
     public partial class App : Application
     {
@@ -9,7 +11,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new Views.vElementos());
+            return new Window(new NavigationPage(new Views.vLogin()));
         }
     }
 }
